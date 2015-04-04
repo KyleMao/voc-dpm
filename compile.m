@@ -116,5 +116,7 @@ else
   cmd = [cmd ' -g'];
 end
 % Turn all warnings on
-cmd = [cmd ' CXXFLAGS="\$CXXFLAGS -Wall -fopenmp ' extra_cxx_flags '"'];
-cmd = [cmd ' LDFLAGS="\$LDFLAGS -Wall -fopenmp ' extra_ld_flags '"'];
+%cmd = [cmd ' CXXFLAGS="\$CXXFLAGS -Wall -fopenmp ' extra_cxx_flags '"'];
+%cmd = [cmd ' LDFLAGS="\$LDFLAGS -Wall -fopenmp ' extra_ld_flags '"'];
+cmd = [cmd ' CXXFLAGS="\$CXXFLAGS -Wall ' extra_cxx_flags '"'];
+cmd = [cmd ' LDFLAGS="\$LDFLAGS -Wall ' extra_ld_flags '"'];

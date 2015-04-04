@@ -2,3 +2,8 @@
 learn
 svm_mex601
 .nfs*
+
+# OS X
+.DS_Store
+
+exps/

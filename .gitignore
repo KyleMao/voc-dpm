@@ -6,4 +6,6 @@ svm_mex601
 # OS X
 .DS_Store
 
+# Project specific
 exps/
+frame_result/

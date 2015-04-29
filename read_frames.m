@@ -7,10 +7,10 @@ interval = 1;
 
 video = VideoReader(video_path);
 frame_nums = round(1 : video.FrameRate * interval : video.NumberOfFrames);
-frames = cell(length(frame_nums), 1);
+frames = zeros(video.Height, video.Width, 3, length(frame_nums), 'uint8');
 
 for i = 1 : length(frame_nums)
-    frames{i} = read(video, frame_nums(i));
+    frames(:, :, :, i) = read(video, frame_nums(i));
 end
 
 end
